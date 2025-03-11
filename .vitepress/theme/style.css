@@ -6,7 +6,7 @@
     'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
 
   --vp-nav-logo-height: 32px;
-  --vp-sidebar-width: 280px; /* Default is 272px, but we have some page names */
+  --vp-sidebar-width: 300px; /* Default is 272px, but we have some page names */
 
   --vp-c-brand-1: #fcd15a;
   --vp-c-brand-2: var(--vp-c-brand-1); /* hover on links */
