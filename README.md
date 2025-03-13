@@ -7,13 +7,6 @@ This is the source repository of the
 
 - Node 20
 
-Create a `.env` file see [`.env.template`](.env.template)
-
-```sh
-cp .env.template .env
-# fill in the .env file
-```
-
 ## Run app
 
 ```
