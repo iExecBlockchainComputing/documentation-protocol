@@ -394,7 +394,7 @@ decentralized network.
 To ensure your business data remains secure and private, iExec offers optional
 RSA result encryption and the ability to push results to private storage
 providers. For more information, refer to `iexec storage --help` and
-the[iExec SDK](for-developers/toolbox/iexec-sdk.md).
+the[iExec SDK](toolbox/iexec-sdk.md).
 
 :::
 
@@ -430,5 +430,5 @@ Resources:
 
 Continue with these articles:
 
-- [Confidential app](confidential-computing/)
+- [Confidential app](confidential-computing/app-developer-secret.md)
 - [Learn how to manage your apporders](advanced/manage-your-apporders.md)

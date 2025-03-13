@@ -1,6 +1,6 @@
 # Connect to iExec Sidechain
 
-As mentioned in the [Overview](for-developers/sidechain/overview.md) section,
+As mentioned in the [Overview](overview.md) section,
 iExec Sidechain is EVM-compatible meaning that users can interact with it using
 their existing EVM-compatible wallets (e.g. Metamask, Portis, ...etc).  
 The following instructions explain how to connect to the iExec Sidechain.

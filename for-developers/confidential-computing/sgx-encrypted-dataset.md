@@ -6,8 +6,8 @@ the `IEXEC_DATASET_FILENAME` environment variable in your application.
 ::: tip Prerequisites:
 
 - Familiarity with the basic concepts of
-  [Intel® SGX](intel-sgx-technology.md#intel-r-software-guard-extension-intel-r-sgx)
-  and [SCONE](intel-sgx-technology.md#scone-framework) framework.
+  [Intel® SGX](intel-sgx-technology.md)
+  and [SCONE](https://scontain.com) framework.
 - [Build With a Scone TEE application](create-your-first-sgx-app.md)
 
 :::
@@ -29,7 +29,7 @@ allowed to get the secret to decrypt it.
 ::: warning
 
 Datasets are only decrypted inside authorized
-[enclaves](intel-sgx-technology.md#enclave) and never leave them. The same thing
+[enclaves](intel-sgx-technology.md) and never leave them. The same thing
 applies to secrets.
 
 :::
@@ -172,7 +172,7 @@ iexec dataset deploy
 
 You will get a hexadecimal address for your deployed dataset. Use that address
 to push the encryption key to the
-[SMS](intel-sgx-technology.md#secret-management-service-sms) so it is available
+[SMS](intel-sgx-technology.md) so it is available
 for authorized applications.
 
 For simplicity, we will use the dataset with a TEE-debug app on a debug
@@ -194,7 +194,7 @@ iexec dataset check-secret
 
 We saw in this section how to encrypt a dataset and deploy it on iExec. In
 addition, we learned how to push the encryption secret to the
-[SMS](intel-sgx-technology.md#secret-management-service-sms). Now we need to
+[SMS](intel-sgx-technology.md). Now we need to
 build the application that is going to consume this dataset.
 
 ## Prepare your application

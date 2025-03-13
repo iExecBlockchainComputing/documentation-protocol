@@ -1,13 +1,5 @@
 # Go to production
 
-::: warning
-
-Before going any further, make sure you managed to:
-
-- [Build your first application](your-first-app.md)
-- [Build Confidential Computing app](confidential-computing/README.md)
-
-:::
 
 ## Connect to the production environment
 
@@ -50,7 +42,7 @@ following information.
 ### Sign your application
 
 Any Confidential Computing application built previously on the
-[develop environment](confidential-computing/intel-sgx-technology.md#lets-build)
+[develop environment](confidential-computing/intel-sgx-technology.md)
 runs in a debug enclave, which, as warned, might be inspected.
 
 To run your application in a production enclave, the application needs to be
