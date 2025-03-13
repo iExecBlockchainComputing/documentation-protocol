@@ -21,8 +21,8 @@ Before going any further, make sure you managed to
 - [iExec SDK](https://www.npmjs.com/package/iexec) 8.0.0 or higher.
   [Install the iExec SDK](../quick-start-for-developers.md#install-the-iexec-sdk)
 - Familiarity with the basic concepts of
-  [Intel® SGX](intel-sgx-technology.md#intel-r-software-guard-extension-intel-r-sgx)
-  and [SCONE](intel-sgx-technology.md#scone-framework) framework.
+  [Intel® SGX](intel-sgx-technology.md)
+  and [SCONE](https://scontain.com) framework.
 
 :::
 
@@ -37,7 +37,7 @@ Assuming your application is deployed (if not please check how to do it
 [with Scone](create-your-first-sgx-app.md#deploy-the-tee-app-on-iexec)), before
 triggering an execution you need to generate an RSA key-pair, then push the
 public key to the
-[Secret Management Service](intel-sgx-technology.md#secret-management-service-sms).
+[Secret Management Service](intel-sgx-technology.md).
 The latter, in turn, will provide it, at runtime, to the enclave running your
 Confidential Computing application.
 
