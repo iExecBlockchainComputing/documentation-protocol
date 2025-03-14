@@ -13,13 +13,14 @@ your particular use-case.
 
 The different kinds of input are listed below:
 
-| name                                                    | type     | confidentiality | provider                   |
-| ------------------------------------------------------- | -------- | --------------- | -------------------------- |
-| [args](#args)                                           | string   | public          | requester                  |
-| [input files](#input-files)                             | files    | public          | requester                  |
-| [requester secrets](#requester-secrets)                 | strings  | secret\*        | requester                  |
-| [dataset](#dataset) / [protected data](#protected-data) | file     | secret\*        | requester/<br/>third-party |
-| [app developer secret](#app-developer-secret) | string  | secret\* | app developer   |                            |
+| name                                                    | type    | confidentiality | provider                   |
+| ------------------------------------------------------- | ------- | --------------- | -------------------------- | --- |
+| [args](#args)                                           | string  | public          | requester                  |
+| [input files](#input-files)                             | files   | public          | requester                  |
+| [requester secrets](#requester-secrets)                 | strings | secret\*        | requester                  |
+| [dataset](#dataset) / [protected data](#protected-data) | file    | secret\*        | requester/<br/>third-party |
+| [app developer secret](#app-developer-secret)           | string  | secret\*        | app developer              |     |
+
 \* secret inputs are only available in Confidential Computing tasks.
 
 ### Args
@@ -128,7 +129,8 @@ Each **requester secret** is exposed to the application in
 The requester uses a **dataset** to use third-party confidential data in the
 application.
 
-Datasets are data in a black box, for developers looking for specific kinds of data see [**protected data**](#protected-data).
+Datasets are data in a black box, for developers looking for specific kinds of
+data see [**protected data**](#protected-data).
 
 #### Provisioning a dataset
 
@@ -158,16 +160,21 @@ The **dataset** address is also exposed via `IEXEC_DATASET_ADDRESS`.
 
 ### Protected Data
 
-The requester uses a **protected data** to use third-party confidential data in the application.
+The requester uses a **protected data** to use third-party confidential data in
+the application.
 
-A **protected data** is a [**dataset**](#dataset) with enhanced features enabled by the [DataProtector tool](https://tools.docs.iex.ec/tools/dataProtector).
+A **protected data** is a [**dataset**](#dataset) with enhanced features enabled
+by the [DataProtector tool](https://tools.docs.iex.ec/tools/dataProtector).
 
-Unlike plain datasets, **protected data** have a public [schema](https://tools.docs.iex.ec/tools/dataProtector/dataProtectorCore/protectData#schema) that describes the content of the confidential data. The public schema makes protected data discoverable and useful for any apps processing the same kind of data.
+Unlike plain datasets, **protected data** have a public
+[schema](https://tools.docs.iex.ec/tools/dataProtector/dataProtectorCore/protectData#schema)
+that describes the content of the confidential data. The public schema makes
+protected data discoverable and useful for any apps processing the same kind of
+data.
 
 Example of protected data schema:
 
 ::: code-group
-
 
 ```json
 {
@@ -184,25 +191,36 @@ Example of protected data schema:
 
 #### Provisioning a protected data
 
-The data provider uses the [DataProtector](https://tools.docs.iex.ec/tools/dataProtector) tool to [create **protected data**](https://tools.docs.iex.ec/tools/dataProtector/dataProtectorCore/protectData) and [grant access](https://tools.docs.iex.ec/tools/dataProtector/dataProtectorCore/grantAccess) to it.
+The data provider uses the
+[DataProtector](https://tools.docs.iex.ec/tools/dataProtector) tool to
+[create **protected data**](https://tools.docs.iex.ec/tools/dataProtector/dataProtectorCore/protectData)
+and
+[grant access](https://tools.docs.iex.ec/tools/dataProtector/dataProtectorCore/grantAccess)
+to it.
 
 #### Consuming a protected data
 
-Developers can use the package [`@iexec/dataprotector-deserializer`](https://www.npmjs.com/package/@iexec/dataprotector-deserializer) in there JS/TS application to extract pieces of data from a **protected data**.
+Developers can use the package
+[`@iexec/dataprotector-deserializer`](https://www.npmjs.com/package/@iexec/dataprotector-deserializer)
+in there JS/TS application to extract pieces of data from a **protected data**.
 
 ::: info
 
 **For non JS/TS application:**
 
-Under the hood **protected data** are objects serialized and stored in [datasets](#dataset).
+Under the hood **protected data** are objects serialized and stored in
+[datasets](#dataset).
 
-The data object is serialized as a file tree structure, non-binary leafs are serialized with the [borsh](https://borsh.io/) specification. The file tree is finally compressed into a `zip` archive.
+The data object is serialized as a file tree structure, non-binary leafs are
+serialized with the [borsh](https://borsh.io/) specification. The file tree is
+finally compressed into a `zip` archive.
 
 To access a leaf from the data object, the application must:
 
 - Decompress the [**dataset** file](#consuming-a-dataset) as a zip archive
 - Access the file at `path/to/data/leaf`
-- In case of non binary data ("bool", "i128", "f64", "string") deserialize the file content using the borsh specification
+- In case of non binary data ("bool", "i128", "f64", "string") deserialize the
+  file content using the borsh specification
 
 :::
 

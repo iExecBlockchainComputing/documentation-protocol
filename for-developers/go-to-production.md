@@ -1,6 +1,5 @@
 # Go to production
 
-
 ## Connect to the production environment
 
 To connect to the production environment, make sure your `chain.json` content is
@@ -42,8 +41,8 @@ following information.
 ### Sign your application
 
 Any Confidential Computing application built previously on the
-[develop environment](confidential-computing/intel-sgx-technology.md)
-runs in a debug enclave, which, as warned, might be inspected.
+[develop environment](confidential-computing/intel-sgx-technology.md) runs in a
+debug enclave, which, as warned, might be inspected.
 
 To run your application in a production enclave, the application needs to be
 signed with a key compatible with the Intel® Attestation Service (IAS). Create

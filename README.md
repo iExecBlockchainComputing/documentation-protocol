@@ -1,15 +1,18 @@
 # iExec Protocol documentation
 
-Welcome to the iExec Protocol documentation repository. 
+Welcome to the iExec Protocol documentation repository.
 
-This guide will help you understand how to contribute to the documentation, ensuring it remains accurate, comprehensive, and user-friendly.
+This guide will help you understand how to contribute to the documentation,
+ensuring it remains accurate, comprehensive, and user-friendly.
 
 This is the source repository of the
 [iExec protocol documentation](https://protocol.docs.iex.ec)
 
 ## Documentation Structure
 
-The iExec Protocol documentation is built using VitePress and follows a structured approach to organize technical information. Before making changes, familiarize yourself with:
+The iExec Protocol documentation is built using VitePress and follows a
+structured approach to organize technical information. Before making changes,
+familiarize yourself with:
 
 - The directory structure
 - Markdown formatting conventions
@@ -37,24 +40,26 @@ Fork the repo and be sure to be on `main` branch
 To run the documentation site locally:
 
 1. Ensure you have Node.js 20 installed
- 
+
 2. Install dependencies with npm install
+
 ```
 npm install
 ```
 
 3. Run the Tailwind watcher with npm run tailwind:watch (keep this running)
+
 ```
 npm run tailwind:watch  (keep it running)
 ```
 
 4. Start the development server with npm run dev
+
 ```
 npm run dev
 ```
 
 5. View the site at the URL provided in your terminal
-
 
 Push your changes to your forked branch.
 
