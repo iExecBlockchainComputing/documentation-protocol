@@ -18,6 +18,7 @@ export default withMermaid(
     lastUpdated: true,
     ignoreDeadLinks: true,
     markdown: {
+      math: true,
       codeTransformers: [transformerTwoslash()],
       theme: {
         light: 'min-light',
