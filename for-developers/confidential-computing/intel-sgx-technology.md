@@ -38,7 +38,7 @@ graph TD
     Req[Requester] --> |1 . Buy task| Chain
     Chain[Blockchain] --> |2 . Notify task to compute| Worker[Worker/Workerpool]
     Worker --> |3 . Launch TEE application| App[TEE application pre-starting]
-    App --> |4 . Send report containing integrity information of the enclave | SMS{SMS Is integrity and authenticity <br> of the requesting enclave valid?}
+    App --> |4 . Send report containing integrity information of the enclave| SMS{SMS Is integrity and authenticity <br> of the requesting enclave valid?}
     SMS --> |No| AppFailed[TEE application run aborted]
     SMS --> |Yes| AppStarted[TEE application started]
 
