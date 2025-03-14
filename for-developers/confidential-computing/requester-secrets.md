@@ -21,9 +21,8 @@ Before going any further, make sure you managed to
   client.
 - [iExec SDK](https://www.npmjs.com/package/iexec) 8.0.0 or higher.
   [Install the iExec SDK](../quick-start-for-developers.md#install-the-iexec-sdk)
-- Familiarity with the basic concepts of
-  [Intel® SGX](intel-sgx-technology.md#intel-r-software-guard-extension-intel-r-sgx)
-  and [SCONE](intel-sgx-technology.md#scone-framework) framework.
+- Familiarity with the basic concepts of [Intel® SGX](intel-sgx-technology.md)
+  and [SCONE](https://scontain.com) framework.
 
 :::
 

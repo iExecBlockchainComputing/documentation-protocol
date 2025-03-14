@@ -17,9 +17,8 @@ Before going any further, make sure you managed to
   client.
 - [iExec SDK](https://www.npmjs.com/package/iexec) 8.0.0 or higher.
   [Install the iExec SDK](../quick-start-for-developers.md#install-the-iexec-sdk)
-- Familiarity with the basic concepts of
-  [Intel® SGX](intel-sgx-technology.md#intel-software-guard-extension-intel-sgx)
-  and [SCONE](intel-sgx-technology.md#scone-framework) framework.
+- Familiarity with the basic concepts of [Intel® SGX](intel-sgx-technology.md)
+  and [SCONE](https://scontain.com) framework.
 
 :::
 
@@ -36,7 +35,7 @@ usage of environment variables which cannot leak outside of the enclave memory.
 ::: warning
 
 The app developer secret is only exposed to your app inside authorized
-[enclaves](intel-sgx-technology.md#enclave) and never leaves them.
+[enclaves](intel-sgx-technology.md) and never leaves them.
 
 :::
 
