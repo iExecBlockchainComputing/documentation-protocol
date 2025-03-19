@@ -14,12 +14,12 @@ your particular use-case.
 The different kinds of input are listed below:
 
 | name                                                    | type    | confidentiality | provider                   |
-| ------------------------------------------------------- | ------- | --------------- | -------------------------- | --- |
+| ------------------------------------------------------- | ------- | --------------- | -------------------------- |
 | [args](#args)                                           | string  | public          | requester                  |
 | [input files](#input-files)                             | files   | public          | requester                  |
 | [requester secrets](#requester-secrets)                 | strings | secret\*        | requester                  |
 | [dataset](#dataset) / [protected data](#protected-data) | file    | secret\*        | requester/<br/>third-party |
-| [app developer secret](#app-developer-secret)           | string  | secret\*        | app developer              |     |
+| [app developer secret](#app-developer-secret)           | string  | secret\*        | app developer              |
 
 \* secret inputs are only available in Confidential Computing tasks.
 
