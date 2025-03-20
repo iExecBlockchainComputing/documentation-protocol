@@ -61,7 +61,9 @@ npm run dev
 
 5. View the site at the URL provided in your terminal
 
-Run format using Prettier if necessary and Push your changes to your forked branch.
+Run format using Prettier if necessary and Push your changes to your forked
+branch.
+
 ```
 npm run format
 ```
