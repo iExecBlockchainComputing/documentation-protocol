@@ -161,8 +161,8 @@ iexec app run --tag tee,tdx --workerpool tdx-labs.iexec.eth --watch
 
 ::: info
 
-You noticed we used `tdx-labs.iexec.eth` instead of an ethereum address, this is
-an ENS name.
+You noticed we used `tdx-labs.pools.iexec.eth` instead of an ethereum address,
+this is an ENS name.
 
 The [ENS (Ethereum Name Service)](https://ens.domains/) protocol enables
 associating decentralized naming to ethereum addresses.
