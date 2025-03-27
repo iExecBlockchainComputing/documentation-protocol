@@ -151,12 +151,12 @@ iexec app deploy
 Specify the tag `--tag tee,tdx` in `iexec app run` command to run a **TDX** app.
 
 One last thing, in order to run a **TDX** app you will also need to select a TDX
-workerpool, use the TDX workerpool `tdx-labs.iexec.eth`.
+workerpool, use the TDX workerpool `tdx-labs.pools.iexec.eth`.
 
 You are now ready to run the app
 
 ```bash
-iexec app run --tag tee,tdx --workerpool tdx-labs.iexec.eth --watch
+iexec app run --tag tee,tdx --workerpool tdx-labs.pools.iexec.eth --watch
 ```
 
 ::: info
