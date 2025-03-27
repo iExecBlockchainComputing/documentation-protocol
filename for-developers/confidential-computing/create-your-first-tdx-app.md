@@ -1,4 +1,4 @@
-# Build a TDX application
+# Build Intel TDX app
 
 In this tutorial, you will learn how to build and run a Confidential Computing
 application with the TDX framework.

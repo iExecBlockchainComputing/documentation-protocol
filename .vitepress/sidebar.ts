@@ -58,7 +58,7 @@ export function getSidebar() {
             ],
           },
           {
-            text: 'Build your first Intel TDX application  <span class="VPBadge warning" style="margin-left: 8px; margin-bottom: -1px; transform: translateY(-1px);">alpha</span>',
+            text: 'Build Intel TDX app  <span class="VPBadge warning" style="margin-left: 8px; margin-bottom: -1px; transform: translateY(-1px);">alpha</span>',
             link: '/for-developers/confidential-computing/create-your-first-tdx-app',
           },
           {
