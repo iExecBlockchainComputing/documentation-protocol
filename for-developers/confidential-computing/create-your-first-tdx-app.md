@@ -3,16 +3,19 @@
 In this tutorial, you will learn how to build and run a Confidential Computing
 application with the TDX framework.
 
-
 ::: warning
 
-⚠️ **Experimental Feature – TDX Testbed Access
-This TDX-powered workerpool is not a production environment. It is an early-access testbed for selected builders. Please note:**
+⚠️ **Experimental Feature – TDX Testbed Access This TDX-powered workerpool is
+not a production environment. It is an early-access testbed for selected
+builders. Please note:**
+
 - ❌ No guaranteed uptime or availability
 - 🔓 Secrets may be lost or leaked
 - 🔄 Service may change or be discontinued at any time
 
-**Use at your own risk.** Your feedback is essential — help us improve by sharing insights on the documentation, tooling, app performance, and your overall experience.
+**Use at your own risk.** Your feedback is essential — help us improve by
+sharing insights on the documentation, tooling, app performance, and your
+overall experience.
 
 :::
 
@@ -23,20 +26,19 @@ This TDX-powered workerpool is not a production environment. It is an early-acce
 - [iExec SDK 8.13.0-tdx](https://github.com/aimen-djari/iexec-sdk/tree/feature/tdx).
   Contact us to have this special release.
 
-
-
 ## Build your application
 
-Thanks to **Intel TDX**, neither the source code or the binaries of your application
-need to be changed in order to run securely in a TEE. Only two files need to be
-changed compared to the usual SGX workflow: `chain.json` and `iexec.json`.
+Thanks to **Intel TDX**, neither the source code or the binaries of your
+application need to be changed in order to run securely in a TEE. Only two files
+need to be changed compared to the usual SGX workflow: `chain.json` and
+`iexec.json`.
 
-iApps for the TDX framework follow the same format as non-TEE applications; follow
-the instructions on [Build your first application](../your-first-app.md) to create
-and Dockerize your iApp.
+iApps for the TDX framework follow the same format as non-TEE applications;
+follow the instructions on [Build your first application](../your-first-app.md)
+to create and Dockerize your iApp.
 
-After this step, the Docker image of your iApp should be published on Docker Hub (e.g. 
-`<docker-hub-user>/hello-world:1.0.0`).
+After this step, the Docker image of your iApp should be published on Docker Hub
+(e.g. `<docker-hub-user>/hello-world:1.0.0`).
 
 ### Update `chain.json`
 
@@ -53,11 +55,10 @@ Modify your `chain.json` as follows to reference the TDX Workerpool:
 }
 ```
 
-
 ### Update `iexec.json`
 
-TEE applications need a few more keys in the `iexec.json` file; run this to add them
-automatically:
+TEE applications need a few more keys in the `iexec.json` file; run this to add
+them automatically:
 
 ```bash
 iexec app init --tee-framework tdx
