@@ -17,10 +17,8 @@ The subgraph can be queried through the
 
 The GraphQL API is publicly available:
 
-- for queries:
-  `https://thegraph.iex.ec/subgraphs/name/bellecour/poco-v5`
-- for subscriptions:
-  `wss://ws-thegraph.iex.ec/subgraphs/name/bellecour/poco-v5`
+- for queries: `https://thegraph.iex.ec/subgraphs/name/bellecour/poco-v5`
+- for subscriptions: `wss://ws-thegraph.iex.ec/subgraphs/name/bellecour/poco-v5`
 
 ::: warning
 
