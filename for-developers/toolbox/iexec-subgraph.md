@@ -13,14 +13,14 @@ with the iExec subgraph.
 ## GraphQL API
 
 The subgraph can be queried through the
-[Graph*i*QL interface](https://thegraph.bellecour.iex.ec/subgraphs/name/bellecour/poco-v5/graphql)
+[Graph*i*QL interface](https://thegraph.iex.ec/subgraphs/name/bellecour/poco-v5/graphql)
 
 The GraphQL API is publicly available:
 
 - for queries:
-  `https://thegraph.bellecour.iex.ec/subgraphs/name/bellecour/poco-v5`
+  `https://thegraph.iex.ec/subgraphs/name/bellecour/poco-v5`
 - for subscriptions:
-  `wss://ws-thegraph.bellecour.iex.ec/subgraphs/name/bellecour/poco-v5`
+  `wss://ws-thegraph.iex.ec/subgraphs/name/bellecour/poco-v5`
 
 ::: warning
 
@@ -49,7 +49,7 @@ this subgraph to avoid being rate limited.
 }
 ```
 
-[Try this query](https://thegraph.bellecour.iex.ec/subgraphs/name/bellecour/poco-v5/graphql?query=%7B%0A++protocol%28id%3A+%22iExec%22%29+%7B%0A++++appsCount%0A++++datasetsCount%0A++++workerpoolsCount%0A++++dealsCount%0A++++tasksCount%0A++++completedTasksCount%0A++++claimedTasksCount%0A++%7D%0A%7D)
+[Try this query](https://thegraph.iex.ec/subgraphs/name/bellecour/poco-v5/graphql?query=%7B%0A++protocol%28id%3A+%22iExec%22%29+%7B%0A++++appsCount%0A++++datasetsCount%0A++++workerpoolsCount%0A++++dealsCount%0A++++tasksCount%0A++++completedTasksCount%0A++++claimedTasksCount%0A++%7D%0A%7D)
 
 ### Application latest usages
 
@@ -68,7 +68,7 @@ query appUsages($appAddress: String!) {
 }
 ```
 
-[Try this query](https://thegraph.bellecour.iex.ec/subgraphs/name/bellecour/poco-v5/graphql?query=query+appUsages%28%24appAddress%3A+String%21%29+%7B%0A++app%28id%3A+%24appAddress%29+%7B%0A++++usages%28orderBy%3A+timestamp%2C+orderDirection%3A+desc%29+%7B%0A++++++dealid%3A+id%0A++++++timestamp%0A++++++tasks+%7B%0A++++++++taskid%3A+id%0A++++++++status%0A++++++%7D%0A++++%7D%0A++%7D%0A%7D&variables=%22%7B%5Cn++%5C%22appAddress%5C%22%3A+%5C%220x18de0518fea922d376596b1ad2a1f62f3981be35%5C%22%5Cn%7D%22&operationName=appUsages)
+[Try this query](https://thegraph.iex.ec/subgraphs/name/bellecour/poco-v5/graphql?query=query+appUsages%28%24appAddress%3A+String%21%29+%7B%0A++app%28id%3A+%24appAddress%29+%7B%0A++++usages%28orderBy%3A+timestamp%2C+orderDirection%3A+desc%29+%7B%0A++++++dealid%3A+id%0A++++++timestamp%0A++++++tasks+%7B%0A++++++++taskid%3A+id%0A++++++++status%0A++++++%7D%0A++++%7D%0A++%7D%0A%7D&variables=%22%7B%5Cn++%5C%22appAddress%5C%22%3A+%5C%220x18de0518fea922d376596b1ad2a1f62f3981be35%5C%22%5Cn%7D%22&operationName=appUsages)
 
 #### Worker rewards an seizes
 
@@ -105,7 +105,7 @@ query workerRewardsAndSeizes($worker: String!) {
 }
 ```
 
-[Try this query](https://thegraph.bellecour.iex.ec/subgraphs/name/bellecour/poco-v5/graphql?query=query+workerRewardsAndSeizes%28%24worker%3A+String%21%29+%7B%0A++rewards%28%0A++++where%3A+%7B+account%3A+%24worker+%7D%0A++++orderBy%3A+timestamp%0A++++orderDirection%3A+desc%0A++%29+%7B%0A++++value%0A++++timestamp%0A++++task+%7B%0A++++++taskid%3A+id%0A++++%7D%0A++++transaction+%7B%0A++++++txHash%3A+id%0A++++%7D%0A++%7D%0A++seizes%28%0A++++where%3A+%7B+account%3A+%24worker+%7D%0A++++orderBy%3A+timestamp%0A++++orderDirection%3A+desc%0A++%29+%7B%0A++++value%0A++++timestamp%0A++++task+%7B%0A++++++taskid%3A+id%0A++++%7D%0A++++transaction+%7B%0A++++++txHash%3A+id%0A++++%7D%0A++%7D%0A%7D&variables=%22%7B%5Cn++%5C%22worker%5C%22%3A+%5C%220xcdad8338eec22e909015ca7ea92dc544336f2007%5C%22%5Cn%7D%22&operationName=workerRewardsAndSeizes)
+[Try this query](https://thegraph.iex.ec/subgraphs/name/bellecour/poco-v5/graphql?query=query+workerRewardsAndSeizes%28%24worker%3A+String%21%29+%7B%0A++rewards%28%0A++++where%3A+%7B+account%3A+%24worker+%7D%0A++++orderBy%3A+timestamp%0A++++orderDirection%3A+desc%0A++%29+%7B%0A++++value%0A++++timestamp%0A++++task+%7B%0A++++++taskid%3A+id%0A++++%7D%0A++++transaction+%7B%0A++++++txHash%3A+id%0A++++%7D%0A++%7D%0A++seizes%28%0A++++where%3A+%7B+account%3A+%24worker+%7D%0A++++orderBy%3A+timestamp%0A++++orderDirection%3A+desc%0A++%29+%7B%0A++++value%0A++++timestamp%0A++++task+%7B%0A++++++taskid%3A+id%0A++++%7D%0A++++transaction+%7B%0A++++++txHash%3A+id%0A++++%7D%0A++%7D%0A%7D&variables=%22%7B%5Cn++%5C%22worker%5C%22%3A+%5C%220xcdad8338eec22e909015ca7ea92dc544336f2007%5C%22%5Cn%7D%22&operationName=workerRewardsAndSeizes)
 
 ## FAQ
 
