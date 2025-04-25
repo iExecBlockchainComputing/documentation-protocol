@@ -3,19 +3,15 @@
 In this tutorial, you will learn how to build and run a Confidential Computing
 application with the TDX framework.
 
-::: warning
+::: info
 
-⚠️ **Experimental Feature – TDX Testbed Access This TDX-powered workerpool is
-not a production environment. It is an early-access testbed for selected
-builders. Please note:**
+**Request access to the experimental feature**  
 
-- ❌ No guaranteed uptime or availability
-- 🔓 Secrets may be lost or leaked
-- 🔄 Service may change or be discontinued at any time
-
-**Use at your own risk.** Your feedback is essential — help us improve by
-sharing insights on the documentation, tooling, app performance, and your
-overall experience.
+- The TDX-powered workerpool is currently in a development environment and not intended for production use.
+- Expect occasional instability or incomplete features. Service is subject to change or discontinuation
+- Development environment only - do not share sensitive data or secrets.
+- Please share any bug reports, suggestions for improvement, or general feedback on your experience.
+- To request early access, please [contact us](../../help/contact-us.md) 
 
 :::
 
