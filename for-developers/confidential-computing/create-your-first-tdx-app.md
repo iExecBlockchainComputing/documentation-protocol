@@ -5,13 +5,16 @@ application with the TDX framework.
 
 ::: info
 
-**Request access to the experimental feature**  
+**Request access to the experimental feature**
 
-- The TDX-powered workerpool is currently in a development environment and not intended for production use.
-- Expect occasional instability or incomplete features. Service is subject to change or discontinuation
+- The TDX-powered workerpool is currently in a development environment and not
+  intended for production use.
+- Expect occasional instability or incomplete features. Service is subject to
+  change or discontinuation
 - Development environment only - do not share sensitive data or secrets.
-- Please share any bug reports, suggestions for improvement, or general feedback on your experience.
-- To request early access, please [contact us](../../help/contact-us.md) 
+- Please share any bug reports, suggestions for improvement, or general feedback
+  on your experience.
+- To request early access, please [contact us](../../help/contact-us.md)
 
 :::
 
