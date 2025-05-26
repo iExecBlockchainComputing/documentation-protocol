@@ -75,7 +75,7 @@ export function getSidebar() {
             items: [
               {
                 text: 'Application I/O',
-                link: '/for-developers/application-io',
+                link: '/for-developers/technical-references/application-io',
               },
             ],
           },
