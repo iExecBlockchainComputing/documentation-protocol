@@ -9,11 +9,7 @@
         target="_blank"
         rel="noopener"
       >
-        <img
-          src="/assets/chatgpt.svg"
-          alt="ChatGPT"
-          class="chatgpt-icon"
-        />
+        <img src="/assets/chatgpt.svg" alt="ChatGPT" class="chatgpt-icon" />
         Ask in ChatGPT
       </a>
 
@@ -53,11 +49,7 @@
         @click="closeDropdown"
       >
         <div class="item-icon-wrapper">
-          <img
-            src="/assets/chatgpt.svg"
-            alt="ChatGPT"
-            class="item-icon"
-          />
+          <img src="/assets/chatgpt.svg" alt="ChatGPT" class="item-icon" />
         </div>
         <div class="item-content">
           <div class="item-title">Open in ChatGPT</div>
@@ -89,11 +81,7 @@
         @click="closeDropdown"
       >
         <div class="item-icon-wrapper">
-          <img
-            src="/assets/anthropic.svg"
-            alt="Anthropic"
-            class="item-icon"
-          />
+          <img src="/assets/anthropic.svg" alt="Anthropic" class="item-icon" />
         </div>
         <div class="item-content">
           <div class="item-title">Open in Claude</div>
