@@ -1,4 +1,5 @@
 import Theme from 'vitepress/theme';
+import Layout from './Layout.vue';
 import TwoslashFloatingVue from '@shikijs/vitepress-twoslash/client';
 import '@shikijs/vitepress-twoslash/style.css';
 import type { EnhanceAppContext } from 'vitepress';
@@ -18,6 +19,7 @@ declare global {
 
 export default {
   extends: Theme,
+  Layout,
   enhanceApp({ app }: EnhanceAppContext) {
     app.use(TwoslashFloatingVue as any);
 
