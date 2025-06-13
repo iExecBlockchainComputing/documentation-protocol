@@ -148,7 +148,7 @@ const isCopying = ref(false);
 const handleClickOutsideRef = ref(null);
 
 const chatGPTLink = computed(() => {
-  const fullUrl = `https://tools.docs.iex.ec${route.path}`;
+  const fullUrl = `https://protocol.docs.iex.ec${route.path}`;
   const prompt = `Please research and analyze this page: ${fullUrl} so I can ask you questions about it. Once you have read it, prompt me with any questions I have. Do not post content from the page in your response. Any of my follow up questions must reference the site I gave you.`;
   return `https://chatgpt.com/?hints=search&q=${encodeURIComponent(prompt)}`;
 });
