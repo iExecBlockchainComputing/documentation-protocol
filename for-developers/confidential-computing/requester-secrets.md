@@ -240,7 +240,7 @@ Create the `Dockerfile`
 
 ```bash
 # Starting from a base image supported by SCONE
-FROM node:14-alpine3.11
+FROM node:22-alpine3.21
 
 # install your dependencies
 RUN mkdir /app && cd /app
@@ -253,7 +253,7 @@ ENTRYPOINT [ "node", "/app/app.js"]
 **For a Python application:**
 
 ```bash
-FROM python:3.7.3-alpine3.10
+FROM python:3.13.3-alpine3.21
 
 ### install python dependencies if you have some
 COPY ./src /app

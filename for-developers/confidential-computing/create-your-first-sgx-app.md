@@ -117,12 +117,10 @@ IMG_NAME=tee-scone-hello-world
 IMG_FROM=<docker-hub-user>/hello-world:1.0.0
 IMG_TO=<docker-hub-user>/${IMG_NAME}:1.0.0-debug
 
-docker pull registry.scontain.com/sconecuratedimages/node:14.4.0-alpine3.11
-
 # Run the sconifier to build the TEE image based on the non-TEE image
 docker run -it --rm \
             -v /var/run/docker.sock:/var/run/docker.sock \
-            registry.scontain.com/scone-production/iexec-sconify-image:5.7.6-v15 \
+            registry.scontain.com/scone-production/iexec-sconify-image:5.9.1-v15\
             sconify_iexec \
             --name=${IMG_NAME} \
             --from=${IMG_FROM} \
@@ -156,7 +154,7 @@ IMG_TO=<docker-hub-user>/${IMG_NAME}:1.0.0-debug
 # Run the sconifier to build the TEE image based on the non-TEE image
 docker run -it \
             -v /var/run/docker.sock:/var/run/docker.sock \
-            registry.scontain.com/scone-production/iexec-sconify-image:5.7.6-v15 \
+            registry.scontain.com/scone-production/iexec-sconify-image:5.9.1-v15\
             sconify_iexec \
             --name=${IMG_NAME} \
             --from=${IMG_FROM} \
@@ -231,7 +229,7 @@ Edit `iexec.json` and fill in the standard keys and the `mrenclave` object:
     "checksum": "<checksum>", // starts with 0x, update it with your own image digest
     "mrenclave": {
       "framework": "SCONE", // TEE framework (keep default value)
-      "version": "v5", // Scone version (keep default value)
+      "version": "v5.9", // Scone version (keep default value)
       "entrypoint": "node /app/app.js" OR "python3 /app/app.py", // update it with your own image entrypoint
       "heapSize": 1073741824, // heap size in bytes, update it with --heap option value used in sconify.sh script during TEE image build
       "fingerprint": "<mrenclave>" // fingerprint of the enclave code (mrenclave), without 0x prefix, see how to retrieve it below
