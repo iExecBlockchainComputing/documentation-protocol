@@ -229,7 +229,7 @@ Edit `iexec.json` and fill in the standard keys and the `mrenclave` object:
     "checksum": "<checksum>", // starts with 0x, update it with your own image digest
     "mrenclave": {
       "framework": "SCONE", // TEE framework (keep default value)
-      "version": "v5", // Scone version (keep default value)
+      "version": "v5.9", // Scone version (keep default value)
       "entrypoint": "node /app/app.js" OR "python3 /app/app.py", // update it with your own image entrypoint
       "heapSize": 1073741824, // heap size in bytes, update it with --heap option value used in sconify.sh script during TEE image build
       "fingerprint": "<mrenclave>" // fingerprint of the enclave code (mrenclave), without 0x prefix, see how to retrieve it below
