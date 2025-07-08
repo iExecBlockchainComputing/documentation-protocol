@@ -1,2 +1,11 @@
 User-agent: *
 Disallow: /
+
+User-agent: Claude-User
+Allow: /
+
+User-agent: ClaudeBot  
+Allow: /
+
+User-agent: Claude-SearchBot
+Allow: /
