@@ -246,7 +246,7 @@ ENTRYPOINT [ "node", "/app/app.js"]
 **For a Python application:**
 
 ```bash
-FROM python:3.7.3-alpine3.10
+FROM python:3.13.3-alpine3.21
 ### install python dependencies if you have some
 COPY ./src /app
 ENTRYPOINT ["python3", "/app/app.py"]
