@@ -152,7 +152,7 @@ application. Execution logs are accessible by:
 ::: code-group
 
 ```bash [Dockerfile for JavaScript]
-FROM node:14-alpine3.11
+FROM node:22-alpine3.21
 ### install your dependencies if you have some
 RUN mkdir /app && cd /app
 COPY ./src /app
